@@ -5,13 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design System - Login</title>
     <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>Connexion</header>
 
     <main>
-      <div id="container"></div>
-    </main>
+      <div class="login-container">
+          <h2 class="login-text">Se connecter</h2>
+          <form>
+              <label for="username">Nom d'utilisateur:</label>
+              <input type="text" id="username" name="username">
+              
+              <label for="password">Mot de passe:</label>
+              <input type="password" id="password" name="password">
+              
+              <a href="#" class="forgot-password">Mot de passe oublié?</a>
+              <button type="submit" class="login-button">Connexion</button>
+          </form>
+      </div>
+  </main>
+
 
     <footer>Copyright @ HETIC 2025</footer>
   </body>
