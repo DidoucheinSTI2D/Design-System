@@ -11,3 +11,33 @@
     margin-bottom: 20px;
     text-align: center;
 }
+
+.errLoginUser {
+    color : red;
+    text-align: center;
+    font-size: 13px;
+    display: none;
+}
+
+.errLoginPassword {
+    color : red;
+    text-align: center;
+    font-size: 13px;
+    display: none;
+}
+
+input#username:invalid {
+    border-color: red;
+}
+
+input#username:invalid ~ .errLoginUser {
+    display: block;
+}
+
+input#password:invalid {
+    border-color: red;
+}
+
+input#password:invalid ~ .errLoginPassword {
+    display: block;
+}
