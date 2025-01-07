@@ -44,6 +44,20 @@ main {
     text-align: center;
 }
 
+.profil-container {
+    background-color: #fdfdfd;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px 291px;
+    width: 204px;
+}
+
+.profil-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -90,8 +104,39 @@ input:focus {
     cursor: pointer;
 }
 
+.save-button {
+    background-color: #BA966A;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
 .login-button:hover {
     background-color: #71624B;
+}
+
+.delete-button {
+    background-color: #D50032;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #E5484D;
+}
+
+.delete-section {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 footer {

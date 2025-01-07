@@ -10,7 +10,28 @@
   <body>
     <header>Profil</header>
 
-    <main></main>
+    <main>
+      <div class="profil-container">
+        <h2>Mon profil</h2>
+        <form>
+            <label for="username">Nom d'utilisateur:</label>
+            <input type="text" id="username" placeholder="Entrez votre nom d'utilisateur">
+    
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" placeholder="Entrez votre mot de passe">
+    
+            <a href="#" class="forgot-password">Mot de passe oublié?</a>
+            <button type="submit" class="save-button">Sauvegarder</button>
+        </form>
+    
+        <div class="delete-section">
+            <p>Supprimer mon profil</p>
+            <button class="delete-button">
+                Supprimer <span class="icon">🗑️</span>
+            </button>
+        </div>
+    </div>    
+    </main>
 
     <footer>Copyright @ HETIC 2025</footer>
   </body>
