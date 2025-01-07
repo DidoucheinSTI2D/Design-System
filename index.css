@@ -1,0 +1,27 @@
+.login-container {
+    background-color: #fdfdfd;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px 291px;
+    width: 204px;
+}
+
+.login-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-button {
+    background-color: #BA966A;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #71624B;
+}
