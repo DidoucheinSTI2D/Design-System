@@ -18,41 +18,36 @@
         <h2 class="login-text">Se connecter</h2>
         <form>
           <label for="username">Nom d'utilisateur:</label>
-          <p class="errLoginUser" style="display: none; color: red">
-            Veuillez Indiquer votre nom d'utilisateur
-          </p>
-          <input type="text" id="username" name="username" required />remplir ce
-          champ
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="username"
+            required
+            value="Nom d'utilisateur"
+            onfocus="if (this.value === 'Nom d\'utilisateur') {this.value = '';}"
+            onblur="if (this.value === '') {this.value = 'Nom d\'utilisateur';}"
+          />
+          <p class="errLoginUser">Veuillez Indiquer votre nom d'utilisateur</p>
 
           <label for="password">Mot de passe:</label>
-          <p class="errLoginPassword" style="display: none; color: red">
-            Veuillez Indiquer votre mot de passe
-          </p>
-          <input type="password" id="password" name="password" required />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="password"
+            required
+            value="password"
+            onfocus="if (this.value === 'password') {this.value = '';}"
+            onblur="if (this.value === '') {this.value = 'password';}"
+          />
+          <p class="errLoginPassword">Veuillez Indiquer votre mot de passe</p>
+          <a href="#" class="forgot-password">Mot de passe oublié?</a>
 
-          <a href="#" class="forgot-password">Mot de passe oubliÃ©?</a>
-          <button type="submit" class="login-button" onclick="empty()">
-            Connexion
-          </button>
+          <button type="submit" class="login-button">Connexion</button>
         </form>
       </div>
     </main>
     <footer>Copyright @ HETIC 2025</footer>
-    <script>
-      function empty() {
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
-        if (username == "") {
-          document.querySelector(".errLoginUser").style.display = "block";
-        } else {
-          document.querySelector(".errLoginUser").style.display = "none";
-        }
-        if (password == "") {
-          document.querySelector(".errLoginPassword").style.display = "block";
-        } else {
-          document.querySelector(".errLoginPassword").style.display = "none";
-        }
-      }
-    </script>
   </body>
 </html>
