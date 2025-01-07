@@ -6,28 +6,53 @@
     <title>Design System - Login</title>
     <link href="global.css" rel="stylesheet" />
     <link href="index.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>Connexion</header>
-
     <main>
       <div class="login-container">
-          <h2 class="login-text">Se connecter</h2>
-          <form>
-              <label for="username">Nom d'utilisateur:</label>
-              <input type="text" id="username" name="username">
-              
-              <label for="password">Mot de passe:</label>
-              <input type="password" id="password" name="password">
-              
-              <a href="#" class="forgot-password">Mot de passe oublié?</a>
-              <button type="submit" class="login-button">Connexion</button>
-          </form>
+        <h2 class="login-text">Se connecter</h2>
+        <form>
+          <label for="username">Nom d'utilisateur:</label>
+          <p class="errLoginUser" style="display: none; color: red">
+            Veuillez Indiquer votre nom d'utilisateur
+          </p>
+          <input type="text" id="username" name="username" required />remplir ce
+          champ
+
+          <label for="password">Mot de passe:</label>
+          <p class="errLoginPassword" style="display: none; color: red">
+            Veuillez Indiquer votre mot de passe
+          </p>
+          <input type="password" id="password" name="password" required />
+
+          <a href="#" class="forgot-password">Mot de passe oubliÃ©?</a>
+          <button type="submit" class="login-button" onclick="empty()">
+            Connexion
+          </button>
+        </form>
       </div>
-  </main>
-
-
+    </main>
     <footer>Copyright @ HETIC 2025</footer>
+    <script>
+      function empty() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (username == "") {
+          document.querySelector(".errLoginUser").style.display = "block";
+        } else {
+          document.querySelector(".errLoginUser").style.display = "none";
+        }
+        if (password == "") {
+          document.querySelector(".errLoginPassword").style.display = "block";
+        } else {
+          document.querySelector(".errLoginPassword").style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>

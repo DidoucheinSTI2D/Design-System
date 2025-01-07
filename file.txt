@@ -1,0 +1,6 @@
+1 composant sur story book et un champs de forlualire ! 
+composant dans story book avec tout les etats !
+
+objectif avoir le bouton en story book ! un cmposant story book, lavantage cest qui va tester les propriéter
+pas de bouton faire unj input un champs de formaulaire
+
