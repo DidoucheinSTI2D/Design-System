@@ -54,6 +54,20 @@ input:focus {
     border-color: #aaa;
 }
 
+button {
+    background-color: #BA966A;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #71624B;
+}
+
 .forgot-password {
     font-size: 0.9rem;
     color: blue;
