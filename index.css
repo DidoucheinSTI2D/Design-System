@@ -40,4 +40,5 @@ input#password:invalid {
 
 input#password:invalid ~ .errLoginPassword {
     display: block;
+    
 }
