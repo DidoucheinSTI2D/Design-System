@@ -1,11 +1,19 @@
+:root {
+    --main-button-color: #BA966A;
+    --main-button-color-hover: #71624B;
+    --secondary-button-color: #D50032;
+    --secondary-button-color-hover: #E5484D;
+    --main-font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
 header {
     border-bottom : solid;
-    height: 90px;
+    height: 5.6rem;
     width: 100%;
     display: flex;
     align-items: center; 
     justify-content: left;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 footer {
@@ -13,14 +21,15 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: 100%;
+    max-height: 3.2rem;
     display: flex;
     align-items: center; 
     justify-content: center;
 }
 
 body {
-    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: var(--main-font-family);
 }
 
 .withSideNav {
@@ -34,7 +43,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 80%;
+    width: 100%;
 }
 
 form {
@@ -45,15 +55,15 @@ form {
 label {
     font-size: 1rem;
     text-align: left;
-    margin-bottom: 5px;
+    margin-bottom: 0.3rem;
 }
 
 input {
     font-size: 1rem;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 15px;
+    padding: 0.6rem;
+    border: 0.05rem solid #ccc;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 input:focus {
@@ -62,24 +72,24 @@ input:focus {
 }
 
 button {
-    background-color: #BA966A;
+    background-color: var(--main-button-color);
     color: #fff;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 16px;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #71624B;
+    background-color: var(--main-button-color-hover);
 }
 
 .forgot-password {
     font-size: 0.9rem;
     color: blue;
     text-align: right;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
     text-decoration: none;
 }
 
@@ -90,43 +100,45 @@ button:hover {
 .primary-container{
     background-color: #fdfdfd;
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 20px 291px;
-    width: 204px;
+    border-radius: 0.5rem;
+    padding: 1.4rem 18rem;
+    width: 40%;
 }
 
 .primary-container h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 1.3rem;
     text-align: center;
 }
 
 .secondary-container {
     background-color: #fdfdfd;
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    width: 40%;
 }
 
 .secondary-container h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
     text-align: center;
 }
 
 .delete-button {
-    background-color: #D50032;
+    background-color: var(--secondary-button-color);
     color: #fff;
     border: none;
-    padding: 10px 50px;
-    border-radius: 5px;
-    font-size: 16px;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+    font-size: 80%;
+    width: 100%;
+    text-align: center;
     cursor: pointer;
 }
 
 .delete-button:hover {
-    background-color: #E5484D;
+    background-color:  var(--secondary-button-color-hover);
 }
 
 .delete-section {
@@ -134,20 +146,20 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .errLoginUser {
     color : red;
     text-align: center;
-    font-size: 13px;
+    font-size: 0.8rem;
     display: none;
 }
 
 .errLoginPassword {
     color : red;
     text-align: center;
-    font-size: 13px;
+    font-size: 0.8rem;
     display: none;
 }
 
