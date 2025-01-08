@@ -23,6 +23,13 @@ body {
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
+.withSideNav {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -80,4 +87,82 @@ button:hover {
     text-decoration: underline;
 }
 
+.primary-container{
+    background-color: #fdfdfd;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px 291px;
+    width: 204px;
+}
 
+.primary-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.secondary-container {
+    background-color: #fdfdfd;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+}
+
+.secondary-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.delete-button {
+    background-color: #D50032;
+    color: #fff;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #E5484D;
+}
+
+.delete-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.errLoginUser {
+    color : red;
+    text-align: center;
+    font-size: 13px;
+    display: none;
+}
+
+.errLoginPassword {
+    color : red;
+    text-align: center;
+    font-size: 13px;
+    display: none;
+}
+
+input#username:invalid {
+    border-color: red;
+}
+
+input#username:invalid ~ .errLoginUser {
+    display: block;
+}
+
+input#password:invalid {
+    border-color: red;
+}
+
+input#password:invalid ~ .errLoginPassword {
+    display: block;
+}
