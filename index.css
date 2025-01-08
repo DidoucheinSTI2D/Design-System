@@ -7,7 +7,7 @@
 }
 
 .login-container h2 {
-    font-size: 1.5rem;
+    font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -40,5 +40,4 @@ input#password:invalid {
 
 input#password:invalid ~ .errLoginPassword {
     display: block;
-    
 }

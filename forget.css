@@ -1,0 +1,45 @@
+.login-container {
+    background-color: #fdfdfd;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px 291px;
+    width: 410px;
+}
+
+.login-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 410px;
+}
+
+
+.errLoginUser {
+    color : red;
+    text-align: center;
+    font-size: 13px;
+    display: none;
+}
+
+.errLoginPassword {
+    color : red;
+    text-align: center;
+    font-size: 13px;
+    display: none;
+}
+
+input#username:invalid {
+    border-color: red;
+}
+
+input#username:invalid ~ .errLoginUser {
+    display: block;
+}
+
+input#password:invalid {
+    border-color: red;
+}
+
+input#password:invalid ~ .errLoginPassword {
+    display: block;
+}
