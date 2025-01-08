@@ -125,15 +125,23 @@ button:hover {
     text-align: center;
 }
 
+.profil{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo-profil {
+    width: 30%;
+}
+
 .delete-button {
     background-color: var(--secondary-button-color);
     color: #fff;
     border: none;
-    padding: 0.7rem;
+    padding: 0.7rem 2rem;
     border-radius: 0.3rem;
-    font-size: 80%;
-    width: 100%;
-    text-align: center;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -177,4 +185,11 @@ input#password:invalid {
 
 input#password:invalid ~ .errLoginPassword {
     display: block;
+}
+
+@media (max-width: 620px){
+    main {
+        max-width: auto;
+        margin-bottom: 20rem;
+    }
 }
