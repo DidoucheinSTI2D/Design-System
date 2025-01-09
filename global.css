@@ -50,6 +50,7 @@ main {
     align-items: center;
     min-height: 80%;
     width: 100%;
+    padding-top: 5rem;
 }
 
 .main-dark {
@@ -253,7 +254,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-@media (max-width: 620px){
+@media (max-width: 800px){
     main {
         max-width: auto;
         margin-bottom: 20rem;  
