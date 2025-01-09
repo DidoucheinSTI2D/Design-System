@@ -97,6 +97,28 @@ button:focus {
     outline: 0.1rem solid rgb(100, 100, 100);
 }
 
+.passwordInput {
+    width: 100%; 
+    position: relative;
+}
+
+.password {
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px; 
+    font-size: 16px;
+}
+
+.eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-80%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
 .primary-button {
     background-color: var(--main-button-color);
 }
