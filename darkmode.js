@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const darkMode = document.querySelector("#darkMode");
+    const darkMode = document.querySelector(".darkMode");
     const body = document.body;
     const main = document.querySelector("main");
 
