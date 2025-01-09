@@ -1,7 +1,7 @@
 .sidebar {
     width: 25vh;
     background-color: #ffffff;
-    border-right: 0.05rem solid #000;
+    border-right: solid;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -9,6 +9,17 @@
     flex-shrink: 0;
     height: 100vh;
     box-sizing: border-box;
+}
+
+.sidebar-dark{
+    background-color: black;
+    color: white;
+}
+
+.switch{
+    position: absolute;
+    right: 1%;
+    top: 1%;
 }
 
 .title {
@@ -24,8 +35,11 @@
 .nav-link {
     text-decoration: none;
     font-size: 1rem;
-    color: #000;
     margin-bottom: 0.7rem;
+}
+
+.switch {
+    bottom : 0;
 }
 
 @media (max-width: 768px) {
