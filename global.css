@@ -83,7 +83,6 @@ input:focus {
 }
 
 button {
-    background-color: var(--main-button-color);
     color: #fff;
     border: none;
     padding: 0.7rem;
@@ -92,8 +91,20 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.primary-button {
+    background-color: var(--main-button-color);
+}
+
+.primary-button:hover {
     background-color: var(--main-button-color-hover);
+}
+
+.danger-button {
+    background-color: var(--secondary-button-color);
+}
+
+.danger-button:hover {
+    background-color:  var(--secondary-button-color-hover);
 }
 
 .forgot-password {
@@ -144,20 +155,6 @@ button:hover {
     width: 30%;
 }
 
-.delete-button {
-    background-color: var(--secondary-button-color);
-    color: #fff;
-    border: none;
-    padding: 0.7rem 2rem;
-    border-radius: 0.3rem;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.delete-button:hover {
-    background-color:  var(--secondary-button-color-hover);
-}
-
 .delete-section {
     display: flex;
     justify-content: center;
@@ -195,6 +192,7 @@ input#password:invalid {
 input#password:invalid ~ .errLoginPassword {
     display: block;
 }
+
 .switch {
   position: relative;
   display: inline-block;
