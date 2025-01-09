@@ -91,6 +91,11 @@ button {
     cursor: pointer;
 }
 
+button:focus {
+    color: rgb(0, 0, 0);
+    outline: 0.1rem solid rgb(100, 100, 100);
+}
+
 .primary-button {
     background-color: var(--main-button-color);
 }
