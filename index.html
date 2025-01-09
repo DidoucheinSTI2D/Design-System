@@ -1,59 +1,45 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Design System - Login</title>
-    <link href="global.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <script src="darkmode.js" defer></script>
-  </head>
-  <body>
-    <header>
-      Connexion
-      <label class="switch">
-        <input type="checkbox" id="darkMode">
-        <span class="slider round"></span>
-      </label>
-    </header>
-    <main>
-      <div class="primary-container">
-        <h2>Se connecter</h2>
-        <form>
-          <label for="username">Nom d'utilisateur:</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            class="username"
-            required
-            value="Nom d'utilisateur"
-            onfocus="if (this.value === 'Nom d\'utilisateur') {this.value = '';}"
-            onblur="if (this.value === '') {this.value = 'Nom d\'utilisateur';}"
-          />
-          <p class="errLoginUser">Veuillez Indiquer votre nom d'utilisateur</p>
 
-          <label for="password">Mot de passe:</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            class="password"
-            required
-            value="password"
-            onfocus="if (this.value === 'password') {this.value = '';}"
-            onblur="if (this.value === '') {this.value = 'password';}"
-          />
-          <p class="errLoginPassword">Veuillez Indiquer votre mot de passe</p>
-          <a href="#" class="forgot-password">Mot de passe oublié?</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design System - Login</title>
+  <link href="global.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet" />
+  <script src="darkmode.js" defer></script>
+</head>
 
-          <button type="submit" class="login-button">Connexion</button>
-        </form>
-      </div>
-    </main>
-    <footer>Copyright @ HETIC 2025</footer>
-  </body>
+<body>
+  <header>
+    Connexion
+    <label class="switch">
+      <input type="checkbox" id="darkMode">
+      <span class="slider round"></span>
+    </label>
+  </header>
+  <main>
+    <div class="primary-container">
+      <h2>Se connecter</h2>
+      <form>
+        <label for="username">Nom d'utilisateur:</label>
+        <input type="text" id="username" name="username" class="username" required value="Nom d'utilisateur"
+          onfocus="if (this.value === 'Nom d\'utilisateur') {this.value = '';}"
+          onblur="if (this.value === '') {this.value = 'Nom d\'utilisateur';}" />
+        <p class="errLoginUser">Veuillez Indiquer votre nom d'utilisateur</p>
+
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" class="password" required value="password"
+          onfocus="if (this.value === 'password') {this.value = '';}"
+          onblur="if (this.value === '') {this.value = 'password';}" />
+        <p class="errLoginPassword">Veuillez Indiquer votre mot de passe</p>
+        <a href="forget.html" class="forgot-password">Mot de passe oublié?</a>
+
+        <button type="submit" class="login-button">Connexion</button>
+      </form>
+    </div>
+  </main>
+  <footer>Copyright @ HETIC 2025</footer>
+</body>
+
 </html>

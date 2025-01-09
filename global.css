@@ -257,5 +257,6 @@ input:checked + .slider:before {
     main {
         max-width: auto;
         margin-bottom: 20rem;  
+        overflow-x: hidden;
     }
 } 
