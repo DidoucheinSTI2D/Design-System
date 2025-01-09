@@ -28,14 +28,6 @@
     margin-bottom: 0.7rem;
 }
 
-main {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.25rem;
-}
-
 @media (max-width: 768px) {
     .sidebar {
         width: 12.5rem;

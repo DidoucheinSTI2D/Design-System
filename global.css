@@ -16,6 +16,11 @@ header {
     font-size: 2rem;
 }
 
+.body-dark {
+    background-color: black;
+    color: white;
+}
+
 footer {
     position: absolute;
     bottom: 0;
@@ -45,6 +50,11 @@ main {
     align-items: center;
     min-height: 80%;
     width: 100%;
+}
+
+.main-dark {
+    background-color: black;
+    color: white;
 }
 
 form {
@@ -98,7 +108,6 @@ button:hover {
 }
 
 .primary-container{
-    background-color: #fdfdfd;
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
     padding: 1.4rem 18rem;
@@ -112,7 +121,6 @@ button:hover {
 }
 
 .secondary-container {
-    background-color: #fdfdfd;
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
     padding: 1.25rem;
