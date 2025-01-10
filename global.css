@@ -57,6 +57,10 @@ main {
     color: white;
 }
 
+.main-dark .primary-container{
+    box-shadow: 1px 4px 6px rgba(255, 255, 255, 0.3);
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -147,7 +151,7 @@ button:focus {
 }
 
 .primary-container {
-    box-shadow: 1px 4px 6px rgba(255, 255, 255, 0.1);
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
     padding: 1.4rem 18rem;
     width: 40%;
