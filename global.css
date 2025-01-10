@@ -160,7 +160,7 @@ button:focus {
 }
 
 .secondary-container {
-    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
     padding: 1.25rem;
     width: 40%;
