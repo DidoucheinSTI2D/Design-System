@@ -38,6 +38,10 @@
     margin-bottom: 0.7rem;
 }
 
+.nav-link:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 800px), (max-width: 600px) {
     body.withSideNav {
         flex-direction: column;
