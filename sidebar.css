@@ -13,8 +13,6 @@
     align-items: flex-start;
     padding: 1.4rem;
     flex-shrink: 0;
-    height: 100vh;
-    box-sizing: border-box;
 }
 
 .sidebar-dark{
@@ -33,10 +31,6 @@
     margin-bottom: 1.25rem;
 }
 
-.nav {
-    display: flex;
-    flex-direction: column;
-}
 
 .nav-link {
     text-decoration: none;
