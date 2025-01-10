@@ -7,21 +7,21 @@ export default {
         layout: "centered",
     },
     argTypes: {
-        placeholderText: { control: "text" },
-        inputType: { options: ['primary', 'small-rounded'], control: { type: 'radio' } },
-        type: { control: "text" },
+        placeholder: { control: "text" },
+        variant: { options: ['classic', 'small-rounded'], control: { type: 'radio' } },
+        type: { options: ['text', 'password', 'email'], control: { type: 'radio' } },
     }
 }
 
 export const Primary = {
     args: {
-        placeholderText: "Entrez votre texte ici...",
-        inputType: "primary",
+        placeholder: "Entrez votre texte ici...",
+        variant: "classic",
         type: "text",
     },
-    render: ({ placeholderText, inputType, type }) => `
+    render: ({ placeholder, variant, type }) => `
         <style>
-        .primary {
+        .classic {
             border: 2px solid #000;
             border-radius: 5px;
             padding: 10px;
@@ -34,6 +34,6 @@ export const Primary = {
             rounded: 5px
         }
         </style>
-        <input type="${type}" class="${inputType}"placeholder="${placeholderText}" />
+        <input type="${type}" class="${variant}"placeholder="${placeholder}" />
     `
 };

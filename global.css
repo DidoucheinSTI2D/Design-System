@@ -122,19 +122,19 @@ button:focus {
     cursor: pointer;
 }
 
-.primary-button {
+.primary {
     background-color: var(--main-button-color);
 }
 
-.primary-button:hover {
+.primary:hover {
     background-color: var(--main-button-color-hover);
 }
 
-.danger-button {
+.danger {
     background-color: var(--secondary-button-color);
 }
 
-.danger-button:hover {
+.danger:hover {
     background-color:  var(--secondary-button-color-hover);
 }
 
@@ -294,7 +294,7 @@ input:checked + .slider:before {
       padding: 0.625rem;
     }
   
-    .primary-button {
+    .primary {
       font-size: 0.875rem;
     }
   
@@ -314,7 +314,7 @@ input:checked + .slider:before {
       padding: 0.9375rem;
     }
   
-    .primary-button {
+    .primary {
       font-size: 0.875rem; 
     }
 }  

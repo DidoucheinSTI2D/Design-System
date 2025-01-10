@@ -7,17 +7,17 @@ export default {
         layout: "centered",
     },
     argTypes: {
-        toggleStatus : { control: "boolean" },
+        status : { control: "boolean" },
         disabled: { control: "boolean" },
     },
 };
 
 export const Primary = {
     args: {
-        toggleStatus: false,
+        status: false,
         disabled: false,
     },
-    render: ({ disabled, toggleStatus }) => `
+    render: ({ disabled, status }) => `
         <style>
         .slider {
             cursor: ${disabled ? "not-allowed" : "pointer"};
@@ -25,7 +25,7 @@ export const Primary = {
         </style>
 
         <label class="switch" for="darkMode">
-            <input type="checkbox" id="darkMode" class="darkMode" ${disabled ? "disabled" : ""} ${toggleStatus ? "checked" : ""}>
+            <input type="checkbox" id="darkMode" class="darkMode" ${disabled ? "disabled" : ""} ${status ? "checked" : ""}>
             <span class="slider round"></span>
         </label>
     `,
