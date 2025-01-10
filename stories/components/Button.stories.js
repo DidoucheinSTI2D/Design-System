@@ -8,10 +8,8 @@ export default {
     },
     argTypes: {
         SampleText: { control: "text" },
-        buttonColor: { control: "color" },
-        buttonHoverColor: { control: "color" },
-        buttonFocus: { control: "text" },
         onClick: { action: "clicked" },
+        buttonColor: { options: ['primary-button', 'danger-button'], control: { type: 'radio' } },
         disabled: { control: "boolean" },
     }
 }
@@ -19,26 +17,18 @@ export default {
 export const Primary = {
     args: {
         SampleText: "Example de texte",
-        buttonColor: "#BA966A",
-        buttonHoverColor: "#71624B",
-        buttonFocus: 'color: blue;',
         onClick: () => console.log('Button clicked!'),
+        buttonColor: 'primary-button',
         disabled: false,
     },
-    render: ({ SampleText, onClick, buttonFocus, buttonHoverColor, buttonColor, disabled }) => `
+    render: ({ SampleText, onClick, buttonColor, disabled }) => `
         <style>
         button {
-            background-color: ${buttonColor};
+            background-color: ;
             cursor: ${disabled ? 'not-allowed' : 'pointer'};
         }
-        button:hover {
-            background-color: ${buttonHoverColor};
-        }
-        button:focus {
-            ${buttonFocus}
-        }
         </style>
-        <button class="primary-button" type="button" 
+        <button class="${buttonColor}" type="button" 
                 ${disabled ? 'disabled' : ''} 
                 onclick="${disabled ? '' : `(${onClick.toString()})();`}">
             ${SampleText}
