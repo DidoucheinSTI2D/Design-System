@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", function() {
     if (actualTheme === "dark") {
         body.classList.add("body-dark");
         main.classList.add("main-dark");
-        sidebar.classList.add("sidebar-dark");
+        if (sidebar) {
+            sidebar.classList.add("sidebar-dark");
+        }
         darkMode.checked = true;
     }
 
@@ -17,12 +19,16 @@ document.addEventListener("DOMContentLoaded", function() {
         if (darkMode.checked) {
             body.classList.add("body-dark");
             main.classList.add("main-dark");
-            sidebar.classList.add("sidebar-dark");
+            if (sidebar) {
+                sidebar.classList.add("sidebar-dark");
+            }
             localStorage.setItem("mode", "dark");
         } else {
             body.classList.remove("body-dark");
             main.classList.remove("main-dark");
-            sidebar.classList.remove("sidebar-dark");
+            if (sidebar) {
+                sidebar.classList.remove("sidebar-dark");
+            }
             localStorage.setItem("mode", "light");
         }
     })
