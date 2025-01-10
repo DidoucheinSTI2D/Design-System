@@ -57,8 +57,8 @@ main {
     color: white;
 }
 
-.main-dark .primary-container {
-    box-shadow: 1px 4px 6px rgba(255, 255, 255, 0.3);
+.main-dark .primary-container{
+    box-shadow: 1px 4px 6px rgba(255, 255, 255, 0.2);
 }
 
 form {
@@ -116,7 +116,7 @@ button:focus {
     position: absolute;
     top: 50%;
     right: 0.625rem;
-    transform: translateY(-50%);
+    transform: translateY(-80%);
     width: 1.25rem;
     height: 1.25rem;
     cursor: pointer;
@@ -135,7 +135,7 @@ button:focus {
 }
 
 .danger-button:hover {
-    background-color: var(--secondary-button-color-hover);
+    background-color:  var(--secondary-button-color-hover);
 }
 
 .forgot-password {
@@ -225,89 +225,96 @@ input#password:invalid ~ .errLoginPassword {
 }
 
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 3.75rem;
-    height: 2.125rem;
+  position: relative;
+  display: inline-block;
+  width: 3.75rem;
+  height: 2.125rem;
 }
 
 .switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: 0.4s;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .slider:before {
-    position: absolute;
-    content: "";
-    height: 1.625rem;
-    width: 1.625rem;
-    left: 0.25rem;
-    bottom: 0.25rem;
-    background-color: white;
-    transition: 0.4s;
+  position: absolute;
+  content: "";
+  height: 1.625rem;
+  width: 1.625rem;
+  left: 0.25rem;
+  bottom: 0.25rem;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 input:checked + .slider {
-    background-color: #00dd00;
+  background-color: #00dd00;
 }
 
 input:checked + .slider:before {
-    background-color: black;
-    transform: translateX(1.625rem);
+  background-color: black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(1.625rem);
+  -ms-transform: translateX(1.625rem);
+  transform: translateX(1.625rem);
 }
 
 .slider.round {
-    border-radius: 34px;
+  border-radius: 34px;
 }
 
 .slider.round:before {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 @media (max-width: 800px) {
     .primary-container {
-        margin: 0.625rem;
-        padding: 0.9375rem;
+      margin: 0.625rem;
+      padding: 0.9375rem;
     }
-
+  
     header {
-        font-size: 1.125rem;
-        padding: 0.625rem;
+      font-size: 1.125rem;
+      padding: 0.625rem;
     }
-
+  
     .primary-button {
-        font-size: 0.875rem;
+      font-size: 0.875rem;
     }
-
+  
     .forgot-password {
-        font-size: 0.875rem;
+      font-size: 0.875rem;
     }
 }
 
 @media (max-width: 600px) {
     header {
-        font-size: 1rem;
-        padding: 0.625rem;
+      font-size: 1rem;
+      padding: 0.625rem;
     }
-
+  
     .primary-container {
-        margin: 0.625rem;
-        padding: 0.9375rem;
+      margin: 0.625rem;
+      padding: 0.9375rem;
     }
-
+  
     .primary-button {
-        font-size: 0.875rem;
+      font-size: 0.875rem; 
     }
-}
+}  
