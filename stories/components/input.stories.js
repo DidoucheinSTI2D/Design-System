@@ -8,8 +8,7 @@ export default {
     },
     argTypes: {
         placeholderText: { control: "text" },
-        rounded: { control: "text" },
-        focusStyle: { control: "text" },
+        inputType: { options: ['primary', 'small-rounded'], control: { type: 'radio' } },
         type: { control: "text" },
     }
 }
@@ -17,19 +16,24 @@ export default {
 export const Primary = {
     args: {
         placeholderText: "Entrez votre texte ici...",
-        rounded: "5px",
-        focusStyle: "outline: none; border: 2px solid #000;",
+        inputType: "primary",
         type: "text",
     },
-    render: ({ placeholderText, rounded, focusStyle, type }) => `
+    render: ({ placeholderText, inputType, type }) => `
         <style>
-        input {
-            border-radius: ${rounded};
-        }
-        input:focus {
-            ${focusStyle}
+        .primary {
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            width: 300px;
+            outline: none;
+        } 
+        .small-rounded {
+            border-radius: 50px;
+            background-color: #f1f1f1;
+            rounded: 5px
         }
         </style>
-        <input type="${type}" placeholder="${placeholderText}" />
+        <input type="${type}" class="${inputType}"placeholder="${placeholderText}" />
     `
 };
