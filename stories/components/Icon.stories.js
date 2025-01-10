@@ -9,7 +9,7 @@ export default {
   }
 }
 
-export const PasswordButton = {
+export const PasswordIcon = {
   args: {
       disabled: false,
   },
