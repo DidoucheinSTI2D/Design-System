@@ -8,7 +8,7 @@ export default {
     },
     argTypes: {
         placeholder: { control: "text" },
-        variant: { options: ['classic', 'small-rounded'], control: { type: 'radio' } },
+        variant: { options: ['classic', 'rounded'], control: { type: 'radio' } },
         type: { options: ['text', 'password', 'email'], control: { type: 'radio' } },
     }
 }
@@ -28,7 +28,7 @@ export const Primary = {
             width: 300px;
             outline: none;
         } 
-        .small-rounded {
+        .rounded {
             border-radius: 50px;
             background-color: #f1f1f1;
             rounded: 5px
