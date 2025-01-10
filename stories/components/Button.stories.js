@@ -1,3 +1,5 @@
+import '../../global.css';
+
 export default {
     title: "button",
     tags: ['autodocs'],
@@ -5,13 +7,12 @@ export default {
         layout: "centered",
     },
     argTypes: {
+        SampleText: { control: "text" },
         buttonColor: { control: "color" },
         buttonHoverColor: { control: "color" },
-        TextColor: { control: "color" },
-        SampleText: { control: "text" },
-        ButtonSize: { control: 'text' },
-        TextSize: { control: 'text' },
-        TextFont: { control: 'text' }
+        buttonFocus: { control: "text" },
+        onClick: { action: "clicked" },
+        disabled: { control: "boolean" },
     }
 }
 
@@ -20,27 +21,28 @@ export const Primary = {
         SampleText: "Example de texte",
         buttonColor: "#BA966A",
         buttonHoverColor: "#71624B",
-        TextColor: "#fff",
-        ButtonSize: "10px",
-        TextSize: "16px",
-        TextFont: "'Kdam Thmor Pro', sans-serif",
+        buttonFocus: 'color: blue;',
+        onClick: () => console.log('Button clicked!'),
+        disabled: false,
     },
-    render: ({ buttonColor, buttonHoverColor, TextColor, TextFont, TextSize, ButtonSize, SampleText }) => `
+    render: ({ SampleText, onClick, buttonFocus, buttonHoverColor, buttonColor, disabled }) => `
         <style>
         button {
             background-color: ${buttonColor};
-            color: ${TextColor};
-            border: none;
-            padding: ${ButtonSize};
-            border-radius: 5px;
-            font-size: ${TextSize};
-            font-family: ${TextFont};
-            cursor: pointer;
+            cursor: ${disabled ? 'not-allowed' : 'pointer'};
         }
         button:hover {
             background-color: ${buttonHoverColor};
         }
+        button:focus {
+            ${buttonFocus}
+        }
         </style>
-        <button type="submit">${SampleText}</button>
+        <button class="primary-button" type="button" 
+                ${disabled ? 'disabled' : ''} 
+                onclick="${disabled ? '' : `(${onClick.toString()})();`}">
+            ${SampleText}
+        </button>
     `
-}
+};
+
